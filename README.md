@@ -16,7 +16,7 @@ Only one container profile can be active at a given time, otherwise there will b
 These are the available container profiles:
 
 * Payara
-  * ``payara-ci-managed``
+  * ``payara-server-managed``
     
       This profile will install a Payara server and start up the server per sample.
       Useful for CI servers. The Payara version that's used can be set via the ``payara.version`` property.
@@ -27,7 +27,7 @@ These are the available container profiles:
       This profile will install Payara Micro and start up the jar per sample.
       Useful for CI servers. The Payara Micro version that's used can be set via the ``payara.micro.version`` property.
 
-  * ``payara-remote``
+  * ``payara-server-remote``
     
       This profile requires you to start up a Payara server outside of the build. Each sample will then
       reuse this instance to run the tests.
