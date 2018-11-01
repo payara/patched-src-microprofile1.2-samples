@@ -8,7 +8,7 @@
 
 	<prerequisites>
 		<maven>3.5</maven>
-	</prerequisites>z
+	</prerequisites>
 
 	<groupId>org.eclipse.microprofile.samples12</groupId>
 	<artifactId>samples-parent</artifactId>
