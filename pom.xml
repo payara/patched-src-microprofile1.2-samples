@@ -166,6 +166,12 @@
 			<version>1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+	               <groupId>org.eclipse.microprofile.rest.client</groupId>
+        	       <artifactId>microprofile-rest-client-api</artifactId>
+                       <version>1.1</version>
+		       <scope>provided</scope>
+       		 </dependency>
 
 		<!-- Test dependencies which can be used in sub-modules -->
 
@@ -518,9 +524,9 @@
 					<plugin>
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
-							<systemPropertyVariables>
-								<javaEEServer>payara-remote</javaEEServer>
-							</systemPropertyVariables>
+                                                    <systemPropertyVariables>
+                                                        <javaEEServer>payara-remote</javaEEServer>
+                                                    </systemPropertyVariables>
 						</configuration>
 					</plugin>
 				</plugins>
