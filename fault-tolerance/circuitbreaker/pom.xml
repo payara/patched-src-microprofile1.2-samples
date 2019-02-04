@@ -11,5 +11,24 @@
     <packaging>war</packaging>
 
     <name>MicroProfile 1.2: Fault Tolerance - CircuitBreaker</name>
-
+    <profiles>
+        <profile>
+            <id>stable</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <!-- Awaiting fix tracked by QA-137 -->
+                                <exclude>org.eclipse.microprofile12.faulttolerance.circuitbreaker.ClassLevelCircuitBreakerBeanTest</exclude>
+                                <exclude>org.eclipse.microprofile12.faulttolerance.circuitbreaker.MethodLevelCircuitBreakerBeanTest</exclude>
+                            </excludes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
