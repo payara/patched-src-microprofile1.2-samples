@@ -656,7 +656,7 @@
 			</dependencyManagement>
 
 			<dependencies>
-<<<<<<< HEAD
+
 				<!-- Needed for websocket tests that use ContainerProvider.getWebSocketContainer()
 					to connect from a the client to the websocket server. -->
 				<dependency>
@@ -694,8 +694,8 @@
 					<version>3.0.19.Final</version>
 					<scope>test</scope>
 				</dependency>
-=======
->>>>>>> upstream/master
+
+
 
 				<!-- The actual Arquillian container, which also takes care of downloading
 					the server bits -->
